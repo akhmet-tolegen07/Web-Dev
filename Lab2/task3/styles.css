@@ -87,7 +87,7 @@ p.subtitle {
   border-radius: 12px;
   padding: 30px 20px;
   width: 260px;
-  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,4 +172,68 @@ p.subtitle {
   .v-line {
     display: none;
   }
+}
+
+.addons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 68px;
+}
+
+#h2-addons {
+  font-size: 56px;
+  margin: 68px 0 28px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.addon {
+  border: 1px solid rgb(202, 197, 197);
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 4px 120px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  min-height: 150px;
+  max-width: 320px;
+  position: relative;
+}
+.addon h4 {
+  margin: 0 0 20px;
+  font-size: 22px;
+}
+
+.addon p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.addon a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 800;
+}
+.addon a:hover {
+  text-decoration: underline;
+}
+
+.new {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  border: 1.5px solid #16a34a;
+  color: #16a34a;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 800;
 }

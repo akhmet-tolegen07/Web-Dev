@@ -126,10 +126,12 @@ label {
   cursor: pointer;
   width: 100%;
   margin-top: 12px;
+  background-color: white;
 }
 
 .cr-new-acc button:hover {
-  background-color: #1877f2;
+  background-color: #dfe5ec;
+  color: white;
 }
 
 .cr-new-acc button a {
