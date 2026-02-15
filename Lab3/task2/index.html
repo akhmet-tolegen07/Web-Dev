@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="menu"><p>To Do List</p></nav>
+    <div class="main-content">
+      <section>
+        <h1>To Do List</h1>
+        <form method="get" id="create-new-task">
+          <input
+            placeholder="New Task"
+            type="text"
+            name="newTask"
+            maxlength="50"
+            required
+          />
+          <button id="add-button">Add</button>
+        </form>
+        <div id="todo-list"></div>
+      </section>
+    </div>
+    <footer></footer>
+    <script src="script1.js"></script>
+  </body>
+</html>
