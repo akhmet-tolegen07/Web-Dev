@@ -1,0 +1,26 @@
+<div class="card">
+  <a [href]="product.link" target="_blank">
+    <img class="main-img" [src]="selectedImage" [alt]="product.name" />
+  </a>
+  <div class="thumbs">
+    <img *ngFor="let img of product.images" [src]="img" (click)="setImage(img)" />
+  </div>
+
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <p class="price">Price: {{ product.price | currency: '₸' : 'symbol' : '1.0-0' }}</p>
+  <div class="rating">
+    <span *ngFor="let star of getStars()"
+      >★
+      <p></p
+    ></span>
+    <span class="rating-number">{{ product.rating }}</span>
+  </div>
+
+  <p><button (click)="like()">❤</button> {{ product.likes }}</p>
+
+  <div class="buttons">
+    <button (click)="remove()">Delete</button>| <button (click)="shareWhatsApp()">WhatsApp</button>|
+    <button (click)="shareTelegram()">Telegram</button>
+  </div>
+</div>

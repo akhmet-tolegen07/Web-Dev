@@ -1,0 +1,26 @@
+<h1>Categories</h1>
+<button
+  *ngFor="let c of categories"
+  (click)="selectCategory(c.id)"
+  [class.active]="selectedCategoryId === c.id"
+>
+  {{ c.name }}
+</button>
+<hr />
+<style>
+  button {
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+  }
+  button:hover {
+    cursor: pointer;
+    color: rgb(111, 111, 111);
+  }
+</style>
+
+@if (selectedCategoryId) {
+  <app-product-list [products]="selectedProducts"></app-product-list>
+} @else {
+  <p>Select a category</p>
+}
