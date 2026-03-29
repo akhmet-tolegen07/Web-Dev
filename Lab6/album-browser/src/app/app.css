@@ -1,0 +1,18 @@
+nav {
+  flex-direction: row;
+  display: flex;
+}
+
+.links {
+  margin-right: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.active-link {
+  color: rgb(145, 63, 8);
+}
